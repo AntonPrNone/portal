@@ -1,0 +1,347 @@
+@font-face {
+    font-family: "Open Sans B";
+    src: url("media/OpenSansCondensed-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans R";
+    src: url("media/OpenSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Orbitron";
+    src: url("media/Orbitron-VariableFont_wght.ttf");
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    color: white;
+    background-color: #000000;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+h1{
+    font-family: 'IBM', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    color: coral;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul{
+    list-style-image: url('Media/img/marker.png');
+}
+
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+    width: 10px; /* ширина для вертикального скролла */
+    height: 8px; /* высота для горизонтального скролла */
+    background-color: #00000000;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    background-color: #5f0085;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #7a7a7a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #0035a7;
+}
+
+#toTop {
+    width:100px;
+    background:#000000a6;
+    border-radius: 10px;
+    text-align:center;
+    padding:5px;
+    position:fixed;
+    bottom:10px; /* отступ кнопки от нижнего края страницы*/
+    right:10px;
+    cursor:pointer;
+    display:none;
+    color:rgb(35, 0, 233);
+    font-size:18px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #001aaf69;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    position: fixed;
+    
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    position: fixed;
+    margin: 10px 0 0 10px ;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.623);
+    z-index: 1;
+    margin-top: 50px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: beige;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgba(0, 0, 0, 0.466);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #a32600;}
+
+
+
+header, #s1, #s2, #s3, #s4, footer{
+    width: 100%;
+    height: 1080px;
+    object-fit: cover;
+    display: block;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+header{
+    background-image: url(media/img0.png);
+}
+
+#s1{
+    background-image: url(media/img1.png);
+}
+
+#s2{
+    background-image: url(media/img2.png);
+    padding-right: 20px;
+}
+
+#s3{
+    background-image: url(media/img3.png);
+    padding-right: 20px;
+}
+
+#s4{
+    background-image: url(media/img4.png);
+}
+
+footer{ 
+    background-image: url(media/img5.jpg);
+    height: 180px;
+}
+
+#nav2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#nav2 div{
+    font-family: "Open Sans B";
+    margin-top: 50px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+#nav2 img{
+    width: 281px;
+    height: 102px;
+    border-radius: 50px;
+}
+
+header #portal2{
+ 
+    border-radius: 63px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+header p{
+    width: 479px;
+    height: 110px;
+    padding-top: 50px;
+    text-align: center;
+    font-family: "Open Sans R";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    /* or 27px */
+
+    margin: 0 auto;
+    text-transform: capitalize;
+}
+
+#s1 table{
+    width: 380px;
+}
+
+#s1 table th{
+    padding: 15px 15px;
+}
+
+#s1 table caption{
+    font-family: 'Orbitron';    
+    padding-top: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 50px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+#table2{
+    position: absolute;
+}
+
+#s1{
+    display: flex;
+    justify-content: space-between;
+}
+
+#s1 p{
+    text-align: center;
+    margin: 20px 10px;
+}
+
+#s1 #saund{
+    margin-top: 40%;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(45deg, #002868 33%, #ff5100 66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #001e4e;
+}
+
+#s2 h1{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background: linear-gradient(45deg, #002868 50%, #ff5100 55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#s2 p{
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 10px;
+    margin-left: 20px;
+    background-color: rgba(0, 0, 0, 0.750);
+    max-height: 80%;
+    text-indent: 1.5em;
+}
+
+.posl{
+    padding-bottom: 20px;
+}
+
+#s3 h1{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background: linear-gradient(45deg, #ff5100 40%, #002868 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#s3 p{
+    font-size: 13px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-left: 20px;
+    background-color: rgba(0, 0, 0, 0.750);
+    max-height: 80%;
+    text-indent: 1.5em;
+}
+
+#s4 .video{
+    height: 300px;
+    text-align: center;
+    padding-top: 200px;
+}
+
+footer{
+    display: flex;
+    justify-content:space-around;
+
+}
+
+footer p{
+    width: 480px;
+    color: rgba(255, 255, 255, 0.63);
+    text-indent: 1.5em;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+footer #steam{
+    border-radius: 100%;
+    height: 100px;
+    margin: auto;
+}
+
+footer #epik{
+    height: 100px;
+    margin: auto;
+}
+
+footer #portalimg, footer #portal2img{
+    height: 150px;
+    margin: auto;
+    border-radius: 20px;
+}
